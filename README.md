@@ -1,4 +1,4 @@
 # iOS SDK Full API Reference
 
-* [ios-sdk](ios-sdk)
-* [template](template)
+* [ios-sdk](ios-sdk.md)
+* [template](template.md)
