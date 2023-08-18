@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thinkingdataanalytics_0',['ThinkingDataAnalytics',['../index.html',1,'']]]
+  ['tdanalytics_0',['TDAnalytics',['../index.html',1,'']]]
 ];

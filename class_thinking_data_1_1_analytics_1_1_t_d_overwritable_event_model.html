@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ThinkingDataAnalytics: ThinkingData.Analytics.TDOverwritableEventModel Class Reference</title>
+<title>TDAnalytics: ThinkingData.Analytics.TDOverwritableEventModel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ThinkingDataAnalytics<span id="projectnumber">&#160;v2.6.0</span>
+   <div id="projectname">TDAnalytics<span id="projectnumber">&#160;3.0.0</span>
    </div>
    <div id="projectbrief">ThinkingData Analytics SDK for Unity.</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_thinking_data_1_1_analytics_1_1_t_d_overwritable_event_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ThinkingData.Analytics.TDOverwritableEventModel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,7 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2d01eb55733b95308b54489095b5b25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct TDOverwritableEventModel instance.  <br /></td></tr>
 <tr class="separator:a2d01eb55733b95308b54489095b5b25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html">ThinkingData.Analytics.TDEventModel</a></td></tr>
-<tr class="memitem:ab00d1c92a40078ea6b5261035ca8379f inherit pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#ab00d1c92a40078ea6b5261035ca8379f">TDEventModel</a> (string eventName)</td></tr>
+<tr class="memitem:ab00d1c92a40078ea6b5261035ca8379f inherit pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>TDEventModel</b> (string eventName)</td></tr>
 <tr class="separator:ab00d1c92a40078ea6b5261035ca8379f inherit pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7461b6446dae90ec56ff4a4665902c inherit pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a9b7461b6446dae90ec56ff4a4665902c">SetTime</a> (DateTime time, TimeZoneInfo timeZone)</td></tr>
 <tr class="memdesc:a9b7461b6446dae90ec56ff4a4665902c inherit pub_methods_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set date time and timezone for the event.  <br /></td></tr>
@@ -117,19 +119,23 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_thinking_data_1_1_analytics_1_1_t_d_event_model')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html">ThinkingData.Analytics.TDEventModel</a></td></tr>
-<tr class="memitem:a704c5429abd530ef6498fb645ee89d4a inherit pub_types_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">TDEventType</a> { <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aa7fb55ed0b7a30342ba6da306428cae04">First</a>
-, <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aad0a9acf8aed3a47ed70f8a51b49b604a">Updatable</a>
-, <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aa0b43011d6ee0ce679b082f3013fc2655">Overwritable</a>
+<tr class="memitem:a704c5429abd530ef6498fb645ee89d4a inherit pub_types_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top"><a id="a704c5429abd530ef6498fb645ee89d4a" name="a704c5429abd530ef6498fb645ee89d4a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TDEventType</b> { <b>First</b>
+, <b>Updatable</b>
+, <b>Overwritable</b>
  }</td></tr>
 <tr class="separator:a704c5429abd530ef6498fb645ee89d4a inherit pub_types_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td colspan="2" onclick="javascript:toggleInherit('properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html">ThinkingData.Analytics.TDEventModel</a></td></tr>
-<tr class="memitem:aec6d53950193467abfba5aff85441cb3 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">TDEventType</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#aec6d53950193467abfba5aff85441cb3">EventType</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aec6d53950193467abfba5aff85441cb3 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">
+TDEventType?&#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b><code> [get, set]</code></td></tr>
 <tr class="separator:aec6d53950193467abfba5aff85441cb3 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a345de0dba1106aabc5c3fea1ca7402 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a7a345de0dba1106aabc5c3fea1ca7402">EventName</a><code> [get]</code></td></tr>
+<tr class="memitem:a7a345de0dba1106aabc5c3fea1ca7402 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">
+string&#160;</td><td class="memItemRight" valign="bottom"><b>EventName</b><code> [get]</code></td></tr>
 <tr class="separator:a7a345de0dba1106aabc5c3fea1ca7402 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62138e7b92256e1f790e1bd2aabf1005 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a62138e7b92256e1f790e1bd2aabf1005">Properties</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a62138e7b92256e1f790e1bd2aabf1005 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">
+Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Properties</b><code> [get, set]</code></td></tr>
 <tr class="separator:a62138e7b92256e1f790e1bd2aabf1005 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68857e696d41613d89baa5882fbcbe44 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a68857e696d41613d89baa5882fbcbe44">ExtraId</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a68857e696d41613d89baa5882fbcbe44 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memItemLeft" align="right" valign="top">
+string&#160;</td><td class="memItemRight" valign="bottom"><b>ExtraId</b><code> [get, set]</code></td></tr>
 <tr class="separator:a68857e696d41613d89baa5882fbcbe44 inherit properties_class_thinking_data_1_1_analytics_1_1_t_d_event_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -140,9 +146,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ThinkingData.Analytics.TDOverwritableEventModel.TDOverwritableEventModel </td>
@@ -162,11 +165,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Construct TDOverwritableEventModel instance. </p>
@@ -181,7 +179,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/ThinkingAnalytics/<a class="el" href="_t_d_event_8cs.html">TDEvent.cs</a></li>
+<li>Assets/ThinkingAnalytics/TDEvent.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ThinkingDataAnalytics: ThinkingData.Analytics.TDEventModel Class Reference</title>
+<title>TDAnalytics: ThinkingData.Analytics.TDEventModel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ThinkingDataAnalytics<span id="projectnumber">&#160;v2.6.0</span>
+   <div id="projectname">TDAnalytics<span id="projectnumber">&#160;3.0.0</span>
    </div>
    <div id="projectbrief">ThinkingData Analytics SDK for Unity.</div>
   </td>
@@ -78,7 +78,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#properties">Properties</a>  </div>
+<a href="#properties">Properties</a> &#124;
+<a href="class_thinking_data_1_1_analytics_1_1_t_d_event_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ThinkingData.Analytics.TDEventModel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,15 +100,16 @@ Inheritance diagram for ThinkingData.Analytics.TDEventModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a704c5429abd530ef6498fb645ee89d4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">TDEventType</a> { <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aa7fb55ed0b7a30342ba6da306428cae04">First</a>
-, <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aad0a9acf8aed3a47ed70f8a51b49b604a">Updatable</a>
-, <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4aa0b43011d6ee0ce679b082f3013fc2655">Overwritable</a>
+<tr class="memitem:a704c5429abd530ef6498fb645ee89d4a"><td class="memItemLeft" align="right" valign="top"><a id="a704c5429abd530ef6498fb645ee89d4a" name="a704c5429abd530ef6498fb645ee89d4a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TDEventType</b> { <b>First</b>
+, <b>Updatable</b>
+, <b>Overwritable</b>
  }</td></tr>
 <tr class="separator:a704c5429abd530ef6498fb645ee89d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab00d1c92a40078ea6b5261035ca8379f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#ab00d1c92a40078ea6b5261035ca8379f">TDEventModel</a> (string eventName)</td></tr>
+<tr class="memitem:ab00d1c92a40078ea6b5261035ca8379f"><td class="memItemLeft" align="right" valign="top"><a id="ab00d1c92a40078ea6b5261035ca8379f" name="ab00d1c92a40078ea6b5261035ca8379f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TDEventModel</b> (string eventName)</td></tr>
 <tr class="separator:ab00d1c92a40078ea6b5261035ca8379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7461b6446dae90ec56ff4a4665902c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a9b7461b6446dae90ec56ff4a4665902c">SetTime</a> (DateTime time, TimeZoneInfo timeZone)</td></tr>
 <tr class="memdesc:a9b7461b6446dae90ec56ff4a4665902c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set date time and timezone for the event.  <br /></td></tr>
@@ -124,73 +126,27 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:aec6d53950193467abfba5aff85441cb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">TDEventType</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#aec6d53950193467abfba5aff85441cb3">EventType</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aec6d53950193467abfba5aff85441cb3"><td class="memItemLeft" align="right" valign="top"><a id="aec6d53950193467abfba5aff85441cb3" name="aec6d53950193467abfba5aff85441cb3"></a>
+TDEventType?&#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b><code> [get, set]</code></td></tr>
 <tr class="separator:aec6d53950193467abfba5aff85441cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a345de0dba1106aabc5c3fea1ca7402"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a7a345de0dba1106aabc5c3fea1ca7402">EventName</a><code> [get]</code></td></tr>
+<tr class="memitem:a7a345de0dba1106aabc5c3fea1ca7402"><td class="memItemLeft" align="right" valign="top"><a id="a7a345de0dba1106aabc5c3fea1ca7402" name="a7a345de0dba1106aabc5c3fea1ca7402"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>EventName</b><code> [get]</code></td></tr>
 <tr class="separator:a7a345de0dba1106aabc5c3fea1ca7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62138e7b92256e1f790e1bd2aabf1005"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a62138e7b92256e1f790e1bd2aabf1005">Properties</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a62138e7b92256e1f790e1bd2aabf1005"><td class="memItemLeft" align="right" valign="top"><a id="a62138e7b92256e1f790e1bd2aabf1005" name="a62138e7b92256e1f790e1bd2aabf1005"></a>
+Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Properties</b><code> [get, set]</code></td></tr>
 <tr class="separator:a62138e7b92256e1f790e1bd2aabf1005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68857e696d41613d89baa5882fbcbe44"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a68857e696d41613d89baa5882fbcbe44">ExtraId</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a68857e696d41613d89baa5882fbcbe44"><td class="memItemLeft" align="right" valign="top"><a id="a68857e696d41613d89baa5882fbcbe44" name="a68857e696d41613d89baa5882fbcbe44"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>ExtraId</b><code> [get, set]</code></td></tr>
 <tr class="separator:a68857e696d41613d89baa5882fbcbe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special event class for internal use, do not use this class directly. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a704c5429abd530ef6498fb645ee89d4a" name="a704c5429abd530ef6498fb645ee89d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a704c5429abd530ef6498fb645ee89d4a">&#9670;&#160;</a></span>TDEventType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">ThinkingData.Analytics.TDEventModel.TDEventType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a704c5429abd530ef6498fb645ee89d4aa7fb55ed0b7a30342ba6da306428cae04" name="a704c5429abd530ef6498fb645ee89d4aa7fb55ed0b7a30342ba6da306428cae04"></a>First&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a704c5429abd530ef6498fb645ee89d4aad0a9acf8aed3a47ed70f8a51b49b604a" name="a704c5429abd530ef6498fb645ee89d4aad0a9acf8aed3a47ed70f8a51b49b604a"></a>Updatable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a704c5429abd530ef6498fb645ee89d4aa0b43011d6ee0ce679b082f3013fc2655" name="a704c5429abd530ef6498fb645ee89d4aa0b43011d6ee0ce679b082f3013fc2655"></a>Overwritable&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab00d1c92a40078ea6b5261035ca8379f" name="ab00d1c92a40078ea6b5261035ca8379f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab00d1c92a40078ea6b5261035ca8379f">&#9670;&#160;</a></span>TDEventModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ThinkingData.Analytics.TDEventModel.TDEventModel </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>eventName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a121406c2626693f0d5a975df038045da" name="a121406c2626693f0d5a975df038045da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a121406c2626693f0d5a975df038045da">&#9670;&#160;</a></span>GetEventId()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string ThinkingData.Analytics.TDEventModel.GetEventId </td>
@@ -199,11 +155,6 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get identify code for the event. </p>
@@ -216,9 +167,6 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">DateTime ThinkingData.Analytics.TDEventModel.GetEventTime </td>
@@ -227,11 +175,6 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get date time for the event. </p>
@@ -244,9 +187,6 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">TimeZoneInfo ThinkingData.Analytics.TDEventModel.GetEventTimeZone </td>
@@ -255,11 +195,6 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get timezone for the event. </p>
@@ -272,9 +207,6 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ThinkingData.Analytics.TDEventModel.SetTime </td>
@@ -294,11 +226,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set date time and timezone for the event. </p>
@@ -312,97 +239,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a7a345de0dba1106aabc5c3fea1ca7402" name="a7a345de0dba1106aabc5c3fea1ca7402"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a345de0dba1106aabc5c3fea1ca7402">&#9670;&#160;</a></span>EventName</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string ThinkingData.Analytics.TDEventModel.EventName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aec6d53950193467abfba5aff85441cb3" name="aec6d53950193467abfba5aff85441cb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec6d53950193467abfba5aff85441cb3">&#9670;&#160;</a></span>EventType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a704c5429abd530ef6498fb645ee89d4a">TDEventType</a>? ThinkingData.Analytics.TDEventModel.EventType</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a68857e696d41613d89baa5882fbcbe44" name="a68857e696d41613d89baa5882fbcbe44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68857e696d41613d89baa5882fbcbe44">&#9670;&#160;</a></span>ExtraId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string ThinkingData.Analytics.TDEventModel.ExtraId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62138e7b92256e1f790e1bd2aabf1005" name="a62138e7b92256e1f790e1bd2aabf1005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62138e7b92256e1f790e1bd2aabf1005">&#9670;&#160;</a></span>Properties</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt;string, object&gt; ThinkingData.Analytics.TDEventModel.Properties</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/ThinkingAnalytics/<a class="el" href="_t_d_event_8cs.html">TDEvent.cs</a></li>
+<li>Assets/ThinkingAnalytics/TDEvent.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

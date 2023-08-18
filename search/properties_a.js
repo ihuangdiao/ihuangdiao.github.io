@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['properties_0',['Properties',['../class_thinking_data_1_1_analytics_1_1_t_d_event_model.html#a62138e7b92256e1f790e1bd2aabf1005',1,'ThinkingData::Analytics::TDEventModel']]]
+  ['screenheight_0',['ScreenHeight',['../class_thinking_data_1_1_analytics_1_1_t_d_preset_properties.html#adb14ae573786c06f88822b92b2cd6355',1,'ThinkingData.Analytics.TDPresetProperties.ScreenHeight'],['../class_thinking_analytics_1_1_t_d_preset_properties.html#a7366ec7f362fdc0a269aa5c1e657978a',1,'ThinkingAnalytics.TDPresetProperties.ScreenHeight']]],
+  ['screenwidth_1',['ScreenWidth',['../class_thinking_data_1_1_analytics_1_1_t_d_preset_properties.html#a04e671dd0080c1aedf8aac43ec6bf559',1,'ThinkingData.Analytics.TDPresetProperties.ScreenWidth'],['../class_thinking_analytics_1_1_t_d_preset_properties.html#a5856e08d0ed5804a19baf9c2ff13a0bc',1,'ThinkingAnalytics.TDPresetProperties.ScreenWidth']]],
+  ['simulator_2',['Simulator',['../class_thinking_data_1_1_analytics_1_1_t_d_preset_properties.html#a7e003d78e55a8de5b2545ded37f0393e',1,'ThinkingData.Analytics.TDPresetProperties.Simulator'],['../class_thinking_analytics_1_1_t_d_preset_properties.html#a6a70d01c198fdb2b6210b426cf55c861',1,'ThinkingAnalytics.TDPresetProperties.Simulator']]],
+  ['systemlanguage_3',['SystemLanguage',['../class_thinking_data_1_1_analytics_1_1_t_d_preset_properties.html#a94ff4bf67d5c8a4eef9f7bf81e031f6b',1,'ThinkingData.Analytics.TDPresetProperties.SystemLanguage'],['../class_thinking_analytics_1_1_t_d_preset_properties.html#af0c31ecb0a34f4e2f3a8456477bb298f',1,'ThinkingAnalytics.TDPresetProperties.SystemLanguage']]]
 ];

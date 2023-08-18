@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ThinkingDataAnalytics: ThinkingData.Analytics.TDAnalytics Class Reference</title>
+<title>TDAnalytics: ThinkingData.Analytics.TDAnalytics Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ThinkingDataAnalytics<span id="projectnumber">&#160;v2.6.0</span>
+   <div id="projectname">TDAnalytics<span id="projectnumber">&#160;3.0.0</span>
    </div>
    <div id="projectbrief">ThinkingData Analytics SDK for Unity.</div>
   </td>
@@ -77,7 +77,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_thinking_data_1_1_analytics_1_1_t_d_analytics-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ThinkingData.Analytics.TDAnalytics Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -207,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a635ff30ec56ac947b021b6942f9e928e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a635ff30ec56ac947b021b6942f9e928e">UserDelete</a> (string appId=&quot;&quot;)</td></tr>
 <tr class="memdesc:a635ff30ec56ac947b021b6942f9e928e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes All Properties for a user, the events triggered by the user are still exist.  <br /></td></tr>
 <tr class="separator:a635ff30ec56ac947b021b6942f9e928e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a867d089ceae1691651b304f073cf07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a1a867d089ceae1691651b304f073cf07">SetNetworkType</a> (<a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5">TDNetworkType</a> <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a60fb35dde03090497530d16a2b41a29f">networkType</a>, string appId=&quot;&quot;)</td></tr>
+<tr class="memitem:a1a867d089ceae1691651b304f073cf07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a1a867d089ceae1691651b304f073cf07">SetNetworkType</a> (<a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5">TDNetworkType</a> networkType, string appId=&quot;&quot;)</td></tr>
 <tr class="memdesc:a1a867d089ceae1691651b304f073cf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes All Properties for a user, the events triggered by the user are still exist.  <br /></td></tr>
 <tr class="separator:a1a867d089ceae1691651b304f073cf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a626d61b43ef2312a12b9801b47e748ad"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a626d61b43ef2312a12b9801b47e748ad">GetSDKVersion</a> ()</td></tr>
@@ -252,19 +253,23 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad27945c23824a69b9e0220e07829feda"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#ad27945c23824a69b9e0220e07829feda">Init</a> (<a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a> config)</td></tr>
 <tr class="memdesc:ad27945c23824a69b9e0220e07829feda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Thinking Analytics SDK.  <br /></td></tr>
 <tr class="separator:ad27945c23824a69b9e0220e07829feda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0366e47cdf1fc0bf2770da400091108"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#af0366e47cdf1fc0bf2770da400091108">Init</a> (<a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[] <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a5ed01fe50f72a4348a9b1c478f316c8e">configs</a>=null)</td></tr>
+<tr class="memitem:af0366e47cdf1fc0bf2770da400091108"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#af0366e47cdf1fc0bf2770da400091108">Init</a> (<a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[] configs=null)</td></tr>
 <tr class="memdesc:af0366e47cdf1fc0bf2770da400091108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Thinking Analytics SDK.  <br /></td></tr>
 <tr class="separator:af0366e47cdf1fc0bf2770da400091108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:abe0e907ae755ea72df6969cbff2906b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#abe0e907ae755ea72df6969cbff2906b3">startManually</a> = true</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:abe0e907ae755ea72df6969cbff2906b3"><td class="memItemLeft" align="right" valign="top"><a id="abe0e907ae755ea72df6969cbff2906b3" name="abe0e907ae755ea72df6969cbff2906b3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startManually</b> = true</td></tr>
 <tr class="separator:abe0e907ae755ea72df6969cbff2906b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfac10165417ba62b2e85268a39def37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#abfac10165417ba62b2e85268a39def37">enableLog</a> = true</td></tr>
+<tr class="memitem:abfac10165417ba62b2e85268a39def37"><td class="memItemLeft" align="right" valign="top"><a id="abfac10165417ba62b2e85268a39def37" name="abfac10165417ba62b2e85268a39def37"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableLog</b> = true</td></tr>
 <tr class="separator:abfac10165417ba62b2e85268a39def37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60fb35dde03090497530d16a2b41a29f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5">TDNetworkType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a60fb35dde03090497530d16a2b41a29f">networkType</a> = <a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5ab1c94ca2fbc3e78fc30069c8d0f01680">TDNetworkType.All</a></td></tr>
+<tr class="memitem:a60fb35dde03090497530d16a2b41a29f"><td class="memItemLeft" align="right" valign="top"><a id="a60fb35dde03090497530d16a2b41a29f" name="a60fb35dde03090497530d16a2b41a29f"></a>
+<a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5">TDNetworkType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>networkType</b> = TDNetworkType.All</td></tr>
 <tr class="separator:a60fb35dde03090497530d16a2b41a29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed01fe50f72a4348a9b1c478f316c8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_analytics.html#a5ed01fe50f72a4348a9b1c478f316c8e">configs</a> = new <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[1]</td></tr>
+<tr class="memitem:a5ed01fe50f72a4348a9b1c478f316c8e"><td class="memItemLeft" align="right" valign="top"><a id="a5ed01fe50f72a4348a9b1c478f316c8e" name="a5ed01fe50f72a4348a9b1c478f316c8e"></a>
+<a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>configs</b> = new <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[1]</td></tr>
 <tr class="separator:a5ed01fe50f72a4348a9b1c478f316c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -289,7 +294,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -323,7 +328,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -357,7 +362,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -407,7 +412,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -459,7 +464,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -495,7 +500,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -545,7 +550,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -591,7 +596,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -626,7 +631,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -659,7 +664,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -688,7 +693,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -722,7 +727,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -751,7 +756,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -785,7 +790,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -814,7 +819,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -859,7 +864,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -894,7 +899,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -928,7 +933,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -962,7 +967,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1007,7 +1012,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1042,7 +1047,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1086,7 +1091,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1121,7 +1126,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1155,7 +1160,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1189,7 +1194,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1223,7 +1228,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1273,7 +1278,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1325,7 +1330,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1371,7 +1376,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1416,7 +1421,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1461,7 +1466,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1514,7 +1519,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1559,7 +1564,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1604,7 +1609,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1667,7 +1672,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1731,7 +1736,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1777,7 +1782,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1822,7 +1827,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1867,7 +1872,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1918,7 +1923,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1964,7 +1969,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2015,7 +2020,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2067,7 +2072,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2113,7 +2118,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2148,7 +2153,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2198,7 +2203,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2244,7 +2249,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2295,7 +2300,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2341,7 +2346,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2392,7 +2397,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2438,7 +2443,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2489,7 +2494,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2535,7 +2540,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2580,7 +2585,7 @@ Data Fields</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2596,65 +2601,8 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a5ed01fe50f72a4348a9b1c478f316c8e" name="a5ed01fe50f72a4348a9b1c478f316c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed01fe50f72a4348a9b1c478f316c8e">&#9670;&#160;</a></span>configs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a> [] ThinkingData.Analytics.TDAnalytics.configs = new <a class="el" href="class_thinking_data_1_1_analytics_1_1_t_d_config.html">TDConfig</a>[1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abfac10165417ba62b2e85268a39def37" name="abfac10165417ba62b2e85268a39def37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfac10165417ba62b2e85268a39def37">&#9670;&#160;</a></span>enableLog</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ThinkingData.Analytics.TDAnalytics.enableLog = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60fb35dde03090497530d16a2b41a29f" name="a60fb35dde03090497530d16a2b41a29f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60fb35dde03090497530d16a2b41a29f">&#9670;&#160;</a></span>networkType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5">TDNetworkType</a> ThinkingData.Analytics.TDAnalytics.networkType = <a class="el" href="namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5ab1c94ca2fbc3e78fc30069c8d0f01680">TDNetworkType.All</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe0e907ae755ea72df6969cbff2906b3" name="abe0e907ae755ea72df6969cbff2906b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe0e907ae755ea72df6969cbff2906b3">&#9670;&#160;</a></span>startManually</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ThinkingData.Analytics.TDAnalytics.startManually = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/ThinkingAnalytics/<a class="el" href="_t_d_analytics_8cs.html">TDAnalytics.cs</a></li>
+<li>Assets/ThinkingAnalytics/TDAnalytics.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

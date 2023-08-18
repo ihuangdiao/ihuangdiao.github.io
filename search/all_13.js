@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wifi_0',['WIFI',['../class_thinking_analytics_1_1_thinking_analytics_a_p_i.html#a1803db99f1e5f720f79c64993116bce7a2f0b4d2c0c3d64bbb2cd525dbba8b0d0',1,'ThinkingAnalytics::ThinkingAnalyticsAPI']]],
-  ['wifi_1',['Wifi',['../namespace_thinking_data_1_1_analytics.html#a3fc7d926d26f7ce6c8619ef4f6846ab5adbbd91fb2aed7056f4aeac45a5452357',1,'ThinkingData::Analytics']]]
+  ['zoneoffset_0',['ZoneOffset',['../class_thinking_data_1_1_analytics_1_1_t_d_preset_properties.html#a17a2a6fee1fc0f534e1a8be9635c94e7',1,'ThinkingData.Analytics.TDPresetProperties.ZoneOffset'],['../class_thinking_analytics_1_1_t_d_preset_properties.html#a63caa6bd1351fb3f6b3013efab70642c',1,'ThinkingAnalytics.TDPresetProperties.ZoneOffset']]]
 ];
