@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ThinkingAnalyticsAPI class from the thinking_analytics library, for the Dart programming language.">
+  <title>ThinkingAnalyticsAPI class - thinking_analytics library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">thinking_analytics</a></li>
+    <li><a href="../thinking_analytics/thinking_analytics-library.html">thinking_analytics</a></li>
+    <li class="self-crumb">ThinkingAnalyticsAPI class</li>
+  </ol>
+  <div class="self-name">ThinkingAnalyticsAPI</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">ThinkingAnalyticsAPI</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Official Thinking Analytics API for tracking events and user properties.</p>
+<p>Your should get the instance of ThinkingAnalyticsAPI by calling <code>getInstance</code> with your APP ID of Thinking Analytics project and URL of receiver:</p>
+<pre class="language-dart"><code class="language-dart">final ThinkingAnalyticsAPI ta = await ThinkingAnalyticsAPI.getInstance('APP_ID', 'https://SERVER_URL');
+</code></pre>
+<p>The you could user the ThinkingAnalyticsAPI instance to track events:</p>
+<pre class="language-dart"><code class="language-dart">// track an simple event
+ta.track('example_event');
+</code></pre>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="ThinkingAnalyticsAPI.private" class="callable">
+          <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/ThinkingAnalyticsAPI.private.html">ThinkingAnalyticsAPI.private</a></span><span class="signature">(<span class="parameter" id="private-param-_appId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">_appId</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="clearSuperProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/clearSuperProperties.html">clearSuperProperties</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Clears super properties.
+  
+
+</dd>
+
+        <dt id="createLightInstance" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/createLightInstance.html">createLightInstance</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html">ThinkingAnalyticsAPI</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates a light instance.
+  
+
+</dd>
+
+        <dt id="enableAutoTrack" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableAutoTrack.html">enableAutoTrack</a></span><span class="signature">(<wbr><span class="parameter" id="enableAutoTrack-param-autoTrackTypes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../thinking_analytics/ThinkingAnalyticsAutoTrackType.html">ThinkingAnalyticsAutoTrackType</a></span>&gt;</span></span> <span class="parameter-name">autoTrackTypes</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Enable auto track events.
+  
+
+</dd>
+
+        <dt id="enableThirdPartySharing" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableThirdPartySharing.html">enableThirdPartySharing</a></span><span class="signature">(<wbr><span class="parameter" id="enableThirdPartySharing-param-type">[<span class="type-annotation">dynamic</span> <span class="parameter-name">type</span>, </span><span class="parameter" id="enableThirdPartySharing-param-params"><span class="type-annotation">dynamic</span> <span class="parameter-name">params</span>]</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Enable three-party data synchronization.
+  
+
+</dd>
+
+        <dt id="enableTracking" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableTracking.html">enableTracking</a></span><span class="signature">(<wbr><span class="parameter" id="enableTracking-param-enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enabled</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Pause/resume SDK functions.
+  
+
+</dd>
+
+        <dt id="flush" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/flush.html">flush</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Uploads the cached data immediately.
+  
+
+</dd>
+
+        <dt id="getDeviceId" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getDeviceId.html">getDeviceId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets the device ID.
+  
+
+</dd>
+
+        <dt id="getDistinctId" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getDistinctId.html">getDistinctId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets the current distinct ID.
+  
+
+</dd>
+
+        <dt id="getPresetProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getPresetProperties.html">getPresetProperties</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../thinking_analytics/TDPresetProperties-class.html">TDPresetProperties</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets super properties
+  
+
+</dd>
+
+        <dt id="getPresetPropertiesMap" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getPresetPropertiesMap.html">getPresetPropertiesMap</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets super properties
+  
+
+</dd>
+
+        <dt id="getSuperProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getSuperProperties.html">getSuperProperties</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets super properties
+  
+
+</dd>
+
+        <dt id="identify" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/identify.html">identify</a></span><span class="signature">(<wbr><span class="parameter" id="identify-param-distinctId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">distinctId</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets the distinct ID.
+  
+
+</dd>
+
+        <dt id="login" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/login.html">login</a></span><span class="signature">(<wbr><span class="parameter" id="login-param-accountId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">accountId</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets the account ID.
+  
+
+</dd>
+
+        <dt id="logout" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/logout.html">logout</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Clears the account ID.
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="optInTracking" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/optInTracking.html">optInTracking</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Opts in the SDK being opt outed.
+  
+
+</dd>
+
+        <dt id="optOutTracking" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/optOutTracking.html">optOutTracking</a></span><span class="signature">(<wbr><span class="parameter" id="optOutTracking-param-deleteUser">[<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">deleteUser</span> = <span class="default-value">false</span>]</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Stops the SDK function.
+  
+
+</dd>
+
+        <dt id="setAutoTrackProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/setAutoTrackProperties.html">setAutoTrackProperties</a></span><span class="signature">(<wbr><span class="parameter" id="setAutoTrackProperties-param-autoTrackTypes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../thinking_analytics/ThinkingAnalyticsAutoTrackType.html">ThinkingAnalyticsAutoTrackType</a></span>&gt;</span></span> <span class="parameter-name">autoTrackTypes</span>, </span><span class="parameter" id="setAutoTrackProperties-param-autoTrackEventProperties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">autoTrackEventProperties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="setDynamicSuperProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/setDynamicSuperProperties.html">setDynamicSuperProperties</a></span><span class="signature">(<wbr><span class="parameter" id="setDynamicSuperProperties-param-f"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">f</span>()</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets the dynamic super properties.
+  
+
+</dd>
+
+        <dt id="setSuperProperties" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/setSuperProperties.html">setSuperProperties</a></span><span class="signature">(<wbr><span class="parameter" id="setSuperProperties-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets super properties.
+  
+
+</dd>
+
+        <dt id="setTrackStatus" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/setTrackStatus.html">setTrackStatus</a></span><span class="signature">(<wbr><span class="parameter" id="setTrackStatus-param-status"><span class="type-annotation"><a href="../thinking_analytics/TATrackStatus.html">TATrackStatus</a></span> <span class="parameter-name">status</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Switch reporting status
+PAUSE STOP SAVE_ONLY NORMAL
+  
+
+</dd>
+
+        <dt id="timeEvent" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/timeEvent.html">timeEvent</a></span><span class="signature">(<wbr><span class="parameter" id="timeEvent-param-eventName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">eventName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Starts the timer for the given <code>eventName</code>.
+  
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="track" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/track.html">track</a></span><span class="signature">(<wbr><span class="parameter" id="track-param-eventName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">eventName</span>, </span><span class="parameter" id="track-param-properties">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">properties</span>, </span><span class="parameter" id="track-param-dateTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a>?</span> <span class="parameter-name">dateTime</span>, </span><span class="parameter" id="track-param-timeZone"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">timeZone</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Tracks an event.
+  
+
+</dd>
+
+        <dt id="trackEventModel" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/trackEventModel.html">trackEventModel</a></span><span class="signature">(<wbr><span class="parameter" id="trackEventModel-param-eventModel"><span class="type-annotation"><a href="../thinking_analytics/TrackEventModel-class.html">TrackEventModel</a></span> <span class="parameter-name">eventModel</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Special Event Reporting
+First event: With #first_check_id field with parameter extraID, event type track, and #first_check_id default device id.
+  
+
+</dd>
+
+        <dt id="unsetSuperProperty" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/unsetSuperProperty.html">unsetSuperProperty</a></span><span class="signature">(<wbr><span class="parameter" id="unsetSuperProperty-param-property"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">property</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Deletes a <code>property</code> from current super properties.
+  
+
+</dd>
+
+        <dt id="userAdd" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userAdd.html">userAdd</a></span><span class="signature">(<wbr><span class="parameter" id="userAdd-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/num-class.html">num</a></span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Updates user properties of num type by adding a value.
+  
+
+</dd>
+
+        <dt id="userAppend" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userAppend.html">userAppend</a></span><span class="signature">(<wbr><span class="parameter" id="userAppend-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a></span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Updates user properties of list type by appending some elements.
+  
+
+</dd>
+
+        <dt id="userDelete" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userDelete.html">userDelete</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Deletes the user profile from TA server.
+  
+
+</dd>
+
+        <dt id="userSet" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userSet.html">userSet</a></span><span class="signature">(<wbr><span class="parameter" id="userSet-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets user properties.
+  
+
+</dd>
+
+        <dt id="userSetOnce" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userSetOnce.html">userSetOnce</a></span><span class="signature">(<wbr><span class="parameter" id="userSetOnce-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Sets user properties only once.
+  
+
+</dd>
+
+        <dt id="userUniqAppend" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userUniqAppend.html">userUniqAppend</a></span><span class="signature">(<wbr><span class="parameter" id="userUniqAppend-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a></span>&gt;</span></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  The element appended to the library needs to be done to remove the processing,and then import.
+  
+
+</dd>
+
+        <dt id="userUnset" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/userUnset.html">userUnset</a></span><span class="signature">(<wbr><span class="parameter" id="userUnset-param-property"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">property</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Deletes a <code>property</code> from the user properties.
+  
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="calibrateTime" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/calibrateTime.html">calibrateTime</a></span><span class="signature">(<wbr><span class="parameter" id="calibrateTime-param-timestamp"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">timestamp</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Calibrate SDK time with current Unix timestamp
+  
+
+</dd>
+
+        <dt id="calibrateTimeWithNtp" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/calibrateTimeWithNtp.html">calibrateTimeWithNtp</a></span><span class="signature">(<wbr><span class="parameter" id="calibrateTimeWithNtp-param-ntpServer"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">ntpServer</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Calibrate SDK time with a given NTP server.
+  
+
+</dd>
+
+        <dt id="enableLog" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableLog.html">enableLog</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Enable detail logs of data tracking.
+  
+
+</dd>
+
+        <dt id="getInstance" class="callable">
+  <span class="name"><a href="../thinking_analytics/ThinkingAnalyticsAPI/getInstance.html">getInstance</a></span><span class="signature">(<wbr><span class="parameter" id="getInstance-param-appId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">appId</span>, </span><span class="parameter" id="getInstance-param-serverUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">serverUrl</span>, </span><span class="parameter" id="getInstance-param-timeZone">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">timeZone</span>, </span><span class="parameter" id="getInstance-param-mode"><span class="type-annotation"><a href="../thinking_analytics/ThinkingAnalyticsMode.html">ThinkingAnalyticsMode</a>?</span> <span class="parameter-name">mode</span>, </span><span class="parameter" id="getInstance-param-enableEncrypt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableEncrypt</span>, </span><span class="parameter" id="getInstance-param-secretKey"><span class="type-annotation"><a href="../thinking_analytics/TASecretKey-class.html">TASecretKey</a>?</span> <span class="parameter-name">secretKey</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html">ThinkingAnalyticsAPI</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Gets instance of ThinkingAnalyticsAPI.
+  
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">thinking_analytics</a></li>
+  <li><a href="../thinking_analytics/thinking_analytics-library.html">thinking_analytics</a></li>
+  <li class="self-crumb">ThinkingAnalyticsAPI class</li>
+</ol>
+
+
+    <h5>thinking_analytics library</h5>
+    <ol>
+  <li class="section-title"><a href="../thinking_analytics/thinking_analytics-library.html#classes">Classes</a></li>
+  <li><a href="../thinking_analytics/TASecretKey-class.html">TASecretKey</a></li>
+  <li><a href="../thinking_analytics/TDPresetProperties-class.html">TDPresetProperties</a></li>
+  <li><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html">ThinkingAnalyticsAPI</a></li>
+  <li><a href="../thinking_analytics/TrackEventModel-class.html">TrackEventModel</a></li>
+  <li><a href="../thinking_analytics/TrackFirstEventModel-class.html">TrackFirstEventModel</a></li>
+  <li><a href="../thinking_analytics/TrackOverwriteEventModel-class.html">TrackOverwriteEventModel</a></li>
+  <li><a href="../thinking_analytics/TrackUpdateEventModel-class.html">TrackUpdateEventModel</a></li>
+
+
+
+
+
+
+  <li class="section-title"><a href="../thinking_analytics/thinking_analytics-library.html#enums">Enums</a></li>
+  <li><a href="../thinking_analytics/TAThirdPartyShareType.html">TAThirdPartyShareType</a></li>
+  <li><a href="../thinking_analytics/TATrackStatus.html">TATrackStatus</a></li>
+  <li><a href="../thinking_analytics/ThinkingAnalyticsAutoTrackType.html">ThinkingAnalyticsAutoTrackType</a></li>
+  <li><a href="../thinking_analytics/ThinkingAnalyticsMode.html">ThinkingAnalyticsMode</a></li>
+  <li><a href="../thinking_analytics/ThinkingAnalyticsTrackEventType.html">ThinkingAnalyticsTrackEventType</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html#constructors">Constructors</a></li>
+          <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/ThinkingAnalyticsAPI.private.html">private</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html#instance-methods">Methods</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/clearSuperProperties.html">clearSuperProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/createLightInstance.html">createLightInstance</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableAutoTrack.html">enableAutoTrack</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableThirdPartySharing.html">enableThirdPartySharing</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableTracking.html">enableTracking</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/flush.html">flush</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getDeviceId.html">getDeviceId</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getDistinctId.html">getDistinctId</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getPresetProperties.html">getPresetProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getPresetPropertiesMap.html">getPresetPropertiesMap</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getSuperProperties.html">getSuperProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/identify.html">identify</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/login.html">login</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/logout.html">logout</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/optInTracking.html">optInTracking</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/optOutTracking.html">optOutTracking</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/setAutoTrackProperties.html">setAutoTrackProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/setDynamicSuperProperties.html">setDynamicSuperProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/setSuperProperties.html">setSuperProperties</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/setTrackStatus.html">setTrackStatus</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/timeEvent.html">timeEvent</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/track.html">track</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/trackEventModel.html">trackEventModel</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/unsetSuperProperty.html">unsetSuperProperty</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userAdd.html">userAdd</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userAppend.html">userAppend</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userDelete.html">userDelete</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userSet.html">userSet</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userSetOnce.html">userSetOnce</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userUniqAppend.html">userUniqAppend</a></li>
+    <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/userUnset.html">userUnset</a></li>
+
+    <li class="section-title inherited"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../thinking_analytics/ThinkingAnalyticsAPI-class.html#static-methods">Static methods</a></li>
+          <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/calibrateTime.html">calibrateTime</a></li>
+          <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/calibrateTimeWithNtp.html">calibrateTimeWithNtp</a></li>
+          <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/enableLog.html">enableLog</a></li>
+          <li><a href="../thinking_analytics/ThinkingAnalyticsAPI/getInstance.html">getInstance</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    thinking_analytics
+      3.0.0-beta.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

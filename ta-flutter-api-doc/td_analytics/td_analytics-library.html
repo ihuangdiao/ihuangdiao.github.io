@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="td_analytics library API docs, for the Dart programming language.">
+  <title>td_analytics library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">thinking_analytics</a></li>
+    <li class="self-crumb">td_analytics library</li>
+  </ol>
+  <div class="self-name">td_analytics</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">td_analytics</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="TDAnalytics">
+  <span class="name "><a href="../td_analytics/TDAnalytics-class.html">TDAnalytics</a></span> 
+
+</dt>
+<dd>
+  The packaging class of ThinkingAnalyticsSDK provides static methods, which is more convenient for customers to use
+</dd>
+
+        <dt id="TDAutoTrackEventType">
+  <span class="name "><a href="../td_analytics/TDAutoTrackEventType-class.html">TDAutoTrackEventType</a></span> 
+
+</dt>
+<dd>
+  Automatic collection of event types
+</dd>
+
+        <dt id="TDConfig">
+  <span class="name "><a href="../td_analytics/TDConfig-class.html">TDConfig</a></span> 
+
+</dt>
+<dd>
+  SDK config.
+</dd>
+
+        <dt id="TDFirstEventModel">
+  <span class="name "><a href="../td_analytics/TDFirstEventModel-class.html">TDFirstEventModel</a></span> 
+
+</dt>
+<dd>
+  TDUniqueEvent Used to describe the first event.
+The server uses the event name and #first_check_id to determine if the event was first fired
+If the event already exists in the system, the current data is ignored.
+By default, the device ID is used as #first_check_id.
+</dd>
+
+        <dt id="TDOverWritableEventModel">
+  <span class="name "><a href="../td_analytics/TDOverWritableEventModel-class.html">TDOverWritableEventModel</a></span> 
+
+</dt>
+<dd>
+  Overridden event that corresponds to the ta_overwrite operation.
+Create the TDOverWritableEvent object to override the previous event data.
+Passing eventId specifies the event that needs to be overridden.
+</dd>
+
+        <dt id="TDThirdPartyType">
+  <span class="name "><a href="../td_analytics/TDThirdPartyType-class.html">TDThirdPartyType</a></span> 
+
+</dt>
+<dd>
+  Three-party data platform
+</dd>
+
+        <dt id="TDUpdatableEventModel">
+  <span class="name "><a href="../td_analytics/TDUpdatableEventModel-class.html">TDUpdatableEventModel</a></span> 
+
+</dt>
+<dd>
+  Events that can be updated. Corresponds to the track_update operation.
+In some scenarios, attributes in the event table need to be updated. You can create a TDUpdatableEvent and pass in an eventId identifying this data point.
+Upon receiving such a request, the server uses the current attribute to override the previous attribute of the same name in the corresponding data of the eventId.
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="TDMode">
+  <span class="name "><a href="../td_analytics/TDMode.html">TDMode</a></span> 
+
+</dt>
+<dd>
+  Running mode. The default mode is NORMAL.
+</dd>
+
+        <dt id="TDTrackStatus">
+  <span class="name "><a href="../td_analytics/TDTrackStatus.html">TDTrackStatus</a></span> 
+
+</dt>
+<dd>
+  Data sending status
+</dd>
+
+      </dl>
+    </section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">thinking_analytics</a></li>
+  <li class="self-crumb">td_analytics library</li>
+</ol>
+
+
+    <h5><span class="package-name">thinking_analytics</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../td_analytics/td_analytics-library.html">td_analytics</a></li>
+      <li><a href="../thinking_analytics/thinking_analytics-library.html">thinking_analytics</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>td_analytics library</h5>
+    <ol>
+  <li class="section-title"><a href="../td_analytics/td_analytics-library.html#classes">Classes</a></li>
+  <li><a href="../td_analytics/TDAnalytics-class.html">TDAnalytics</a></li>
+  <li><a href="../td_analytics/TDAutoTrackEventType-class.html">TDAutoTrackEventType</a></li>
+  <li><a href="../td_analytics/TDConfig-class.html">TDConfig</a></li>
+  <li><a href="../td_analytics/TDFirstEventModel-class.html">TDFirstEventModel</a></li>
+  <li><a href="../td_analytics/TDOverWritableEventModel-class.html">TDOverWritableEventModel</a></li>
+  <li><a href="../td_analytics/TDThirdPartyType-class.html">TDThirdPartyType</a></li>
+  <li><a href="../td_analytics/TDUpdatableEventModel-class.html">TDUpdatableEventModel</a></li>
+
+
+
+
+
+
+  <li class="section-title"><a href="../td_analytics/td_analytics-library.html#enums">Enums</a></li>
+  <li><a href="../td_analytics/TDMode.html">TDMode</a></li>
+  <li><a href="../td_analytics/TDTrackStatus.html">TDTrackStatus</a></li>
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    thinking_analytics
+      3.0.0-beta.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
