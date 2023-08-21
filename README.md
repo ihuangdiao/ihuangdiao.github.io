@@ -1,4 +1,4 @@
-# TDAnalytics SDK
+# TDAnalytics
 
 ThinkingData Analytics SDKs
 
