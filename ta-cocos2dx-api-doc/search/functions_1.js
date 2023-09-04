@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['enableautotrack_0',['enableAutoTrack',['../classthinkingdata_1_1analytics_1_1_t_d_analytics.html#aa9b8588dc5b8aa384194cb38006b55ae',1,'thinkingdata::analytics::TDAnalytics::enableAutoTrack(string appid=&quot;&quot;)'],['../classthinkingdata_1_1analytics_1_1_t_d_analytics.html#a701215ab2784a46b805919df3680d809',1,'thinkingdata::analytics::TDAnalytics::enableAutoTrack(const TDJSONObject &amp;properties, TDAutoTrackEventType eventType=(TDAutoTrackEventType) 15, string appid=&quot;&quot;)']]],
+  ['enablethirdpartysharing_1',['enableThirdPartySharing',['../classthinkingdata_1_1analytics_1_1_t_d_analytics.html#a91035c1943cce84df525eb430882811c',1,'thinkingdata::analytics::TDAnalytics::enableThirdPartySharing(TDThirdPartyType type, string appId=&quot;&quot;)'],['../classthinkingdata_1_1analytics_1_1_t_d_analytics.html#a606603f1e19d76eff894ac4e10a6da90',1,'thinkingdata::analytics::TDAnalytics::enableThirdPartySharing(TDThirdPartyType type, const TDJSONObject &amp;properties, string appId=&quot;&quot;)']]],
+  ['enabletracklog_2',['enableTrackLog',['../classthinkingdata_1_1analytics_1_1_t_d_analytics.html#a4920816920a76e65283a9ecc9912aa3f',1,'thinkingdata::analytics::TDAnalytics']]]
+];

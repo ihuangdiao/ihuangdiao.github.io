@@ -2,6 +2,7 @@
 
 ThinkingData Analytics SDKs
 
+![output](http://image.thinkingdata.cn/images/common/logo-en.png)
 
 [ta-unity-api-doc](./ta-unity-api-doc/index.html)
 
@@ -18,3 +19,5 @@ ThinkingData Analytics SDKs
 [ta-cpp-api-doc](./ta-cpp-api-doc/index.html)
 
 [ta-android-api-doc](./ta-android-api-doc/index.html)
+
+[ta-cocos2dx-api-doc](./ta-cocos2dx-api-doc/index.html)
