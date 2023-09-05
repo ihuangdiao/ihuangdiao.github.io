@@ -23,3 +23,5 @@ ThinkingData Analytics SDKs
 [ta-cocos2dx-api-doc](./ta-cocos2dx-api-doc/index.html)
 
 [ta-corona-api-doc](./ta-corona-api-doc/index.html)
+
+[ta-cocos2d-lua-api-doc](./ta-cocos2d-lua-api-doc/index.html)
