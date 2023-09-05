@@ -21,3 +21,5 @@ ThinkingData Analytics SDKs
 [ta-android-api-doc](./ta-android-api-doc/index.html)
 
 [ta-cocos2dx-api-doc](./ta-cocos2dx-api-doc/index.html)
+
+[ta-corona-api-doc](./ta-corona-api-doc/index.html)
