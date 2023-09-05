@@ -1,0 +1,1017 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>TDAnalytics</title>
+    <link rel="stylesheet" href="ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>TDAnalytics</h1>
+
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Programs</h2>
+<ul class="nowrap">
+  <li><strong>TDAnalytics</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Script <code>TDAnalytics</code></h1>
+<p>ThinkingData Analytics Corona SDK.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#init">init (params)</a></td>
+	<td class="summary">SDK Initialization.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#track">track (eventName, properties, appId)</a></td>
+	<td class="summary">Track a Normal Event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#trackFirst">trackFirst (eventName, properties, eventId, appId)</a></td>
+	<td class="summary">Track a First Event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#trackUpdate">trackUpdate (eventName, properties, eventId, appId)</a></td>
+	<td class="summary">Track a Updatable Event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#trackOverwrite">trackOverwrite (eventName, properties, eventId, appId)</a></td>
+	<td class="summary">Track a Overwritable Event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#timeEvent">timeEvent (eventName, appId)</a></td>
+	<td class="summary">Record the event duration, call this method to start the timing,
+ stop the timing when the target event is uploaded,
+ and add the attribute #duration to the event properties, in seconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userSet">userSet (properties, appId)</a></td>
+	<td class="summary">Sets the user property, replacing the original value with the new value if the property already exists.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userSetOnce">userSetOnce (properties, appId)</a></td>
+	<td class="summary">Sets a single user attribute, ignoring the new attribute value if the attribute already exists.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userUnset">userUnset (property, appId)</a></td>
+	<td class="summary">Reset user properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userAdd">userAdd (properties, appId)</a></td>
+	<td class="summary">Adds the numeric type user attributes</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userAppend">userAppend (properties, appId)</a></td>
+	<td class="summary">Append a user attribute of the List type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userUniqAppend">userUniqAppend (properties, appId)</a></td>
+	<td class="summary">The element appended to the library needs to be done to remove the processing,and then import.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#userDelete">userDelete (appId)</a></td>
+	<td class="summary">Delete the user attributes,This operation is not reversible and should be performed with caution.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#flush">flush (appId)</a></td>
+	<td class="summary">Empty the cache queue.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#login">login (accountId, appId)</a></td>
+	<td class="summary">Set the account ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#logout">logout (appId)</a></td>
+	<td class="summary">Clearing the account ID will not upload user logout events.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setDistinctId">setDistinctId (distinctId, appId)</a></td>
+	<td class="summary">Set the distinct ID to replace the default UUID distinct ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getDistinctId">getDistinctId (appId)</a></td>
+	<td class="summary">Get a Distinct ID: The #distinct_id value in the reported data.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getDeviceId">getDeviceId (appId)</a></td>
+	<td class="summary">Get a Device ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getSDKVersion">getSDKVersion ()</a></td>
+	<td class="summary">Get SDK Version</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setSuperProperties">setSuperProperties (properties, appId)</a></td>
+	<td class="summary">Set the public event attribute, which will be included in every event uploaded after that.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#unsetSuperProperties">unsetSuperProperties (property, appId)</a></td>
+	<td class="summary">Clears a public event attribute</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getSuperProperties">getSuperProperties (appId)</a></td>
+	<td class="summary">Gets the public event properties that have been set.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#clearSuperProperties">clearSuperProperties (appId)</a></td>
+	<td class="summary">Clear all public event attributes.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getPresetProperties">getPresetProperties (appId)</a></td>
+	<td class="summary">Gets preset properties for all events.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#calibrateTime">calibrateTime (timestamp, appId)</a></td>
+	<td class="summary">Calibrate Event Time with Timestamp</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#calibrateTimeWithNtp">calibrateTimeWithNtp (ntpServer, appId)</a></td>
+	<td class="summary">Calibrate Event Time with NTP Server</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "init"></a>
+    <strong>init (params)</strong>
+    </dt>
+    <dd>
+    SDK Initialization.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">params</span> SDK Config Information
+        <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+        <li><span class="parameter">serverUrl</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Server URL
+        </li>
+        <li><span class="parameter">autoTrack</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Auto-tracking Event type list, e.g. "appStart", "appEnd", "appInstall"
+        </li>
+        <li><span class="parameter">debugMode</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         SDK running mode, e.g. "normal", "debug", "debugOnly"
+        </li>
+        <li><span class="parameter">enableLog</span>
+            <span class="types"><span class="type">boolean</span></span>
+         Allowed to print logs
+        </li>
+        </li></ul>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">init</span>({
+	appId = <span class="string">"YOUR_APP_ID"</span>,
+	serverUrl = <span class="string">"YOUR_SERVER_URL"</span>
+})</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "track"></a>
+    <strong>track (eventName, properties, appId)</strong>
+    </dt>
+    <dd>
+    Track a Normal Event.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event name
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Event properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">track</span>( <span class="string">"TA"</span>, {
+	key_1 = <span class="string">"value_1"</span>
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "trackFirst"></a>
+    <strong>trackFirst (eventName, properties, eventId, appId)</strong>
+    </dt>
+    <dd>
+    Track a First Event.
+ The first event refers to the ID of a device or other dimension, which will only be recorded once.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event name
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Event properties
+        </li>
+        <li><span class="parameter">eventId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event ID
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">trackFirst</span>( <span class="string">"FirstEvent"</span>, {
+	key_1 = <span class="string">"value_1"</span>
+})</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "trackUpdate"></a>
+    <strong>trackUpdate (eventName, properties, eventId, appId)</strong>
+    </dt>
+    <dd>
+    Track a Updatable Event.
+ You can implement the requirement to modify event data in a specific scenario through updatable events.
+ Updatable events need to specify an ID that identifies the event and pass it in when the updatable event object is created.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event name
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Event properties
+        </li>
+        <li><span class="parameter">eventId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event ID
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">trackUpdate</span>( <span class="string">"UpdateEvent"</span>, {
+	key_1 = <span class="string">"value_1"</span>
+}, <span class="string">"UpdateEventId"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "trackOverwrite"></a>
+    <strong>trackOverwrite (eventName, properties, eventId, appId)</strong>
+    </dt>
+    <dd>
+    Track a Overwritable Event.
+ Overwritable events will completely cover historical data with the latest data, which is equivalent to deleting the previous data and storing the latest data in effect.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event name
+        </li>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Event properties
+        </li>
+        <li><span class="parameter">eventId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event ID
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">trackOverwrite</span>( <span class="string">"OverwriteEvent"</span>, {
+	key_1 = <span class="string">"value_1"</span>
+}, <span class="string">"OverwriteEventId"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "timeEvent"></a>
+    <strong>timeEvent (eventName, appId)</strong>
+    </dt>
+    <dd>
+    Record the event duration, call this method to start the timing,
+ stop the timing when the target event is uploaded,
+ and add the attribute #duration to the event properties, in seconds.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">eventName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Event name
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">timeEvent</span>( <span class="string">"TA"</span> )
+<span class="comment">-- do something...
+</span>TDAnalytics.<span class="function-name">track</span>(<span class="string">"TA"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userSet"></a>
+    <strong>userSet (properties, appId)</strong>
+    </dt>
+    <dd>
+    Sets the user property, replacing the original value with the new value if the property already exists.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         User properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userSet</span>( {
+	name = <span class="string">"Tiki"</span>,
+	age = <span class="number">20</span>
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userSetOnce"></a>
+    <strong>userSetOnce (properties, appId)</strong>
+    </dt>
+    <dd>
+    Sets a single user attribute, ignoring the new attribute value if the attribute already exists.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         User properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userSetOnce</span>( {
+	gender = <span class="string">"male"</span>
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userUnset"></a>
+    <strong>userUnset (property, appId)</strong>
+    </dt>
+    <dd>
+    Reset user properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">property</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         User property
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userUnset</span>( <span class="string">"name_1"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userAdd"></a>
+    <strong>userAdd (properties, appId)</strong>
+    </dt>
+    <dd>
+    Adds the numeric type user attributes
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         User properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userAdd</span>( {
+	age = <span class="number">1</span>
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userAppend"></a>
+    <strong>userAppend (properties, appId)</strong>
+    </dt>
+    <dd>
+    Append a user attribute of the List type.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         User properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userAppend</span>( {
+	toys = { <span class="string">"ball"</span> }
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userUniqAppend"></a>
+    <strong>userUniqAppend (properties, appId)</strong>
+    </dt>
+    <dd>
+    The element appended to the library needs to be done to remove the processing,and then import.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         User properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userUniqAppend</span>( {
+	toys = { <span class="string">"ball"</span>, <span class="string">"apple"</span> }
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "userDelete"></a>
+    <strong>userDelete (appId)</strong>
+    </dt>
+    <dd>
+    Delete the user attributes,This operation is not reversible and should be performed with caution.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">userDelete</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "flush"></a>
+    <strong>flush (appId)</strong>
+    </dt>
+    <dd>
+    Empty the cache queue.  When this api is called, the data in the current cache queue will attempt to be reported.
+ If the report succeeds, local cache data will be deleted.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">flush</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "login"></a>
+    <strong>login (accountId, appId)</strong>
+    </dt>
+    <dd>
+    Set the account ID.  Each setting overrides the previous value. Login events will not be uploaded.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Account ID
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">login</span>( <span class="string">"136xxx"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "logout"></a>
+    <strong>logout (appId)</strong>
+    </dt>
+    <dd>
+    Clearing the account ID will not upload user logout events.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">logout</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "setDistinctId"></a>
+    <strong>setDistinctId (distinctId, appId)</strong>
+    </dt>
+    <dd>
+    Set the distinct ID to replace the default UUID distinct ID
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">distinctId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Distinct ID
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">setDistinctId</span>( <span class="string">"thinkers"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getDistinctId"></a>
+    <strong>getDistinctId (appId)</strong>
+    </dt>
+    <dd>
+    Get a Distinct ID: The #distinct_id value in the reported data.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">getDistinctId</span>( <span class="keyword">function</span> (ret)
+	<span class="keyword">local</span> distinctId = ret
+	<span class="global">print</span>( <span class="string">"current distinctId = "</span> .. distinctId )
+<span class="keyword">end</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getDeviceId"></a>
+    <strong>getDeviceId (appId)</strong>
+    </dt>
+    <dd>
+    Get a Device ID
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">getDeviceId</span>( <span class="keyword">function</span> (ret)
+	<span class="keyword">local</span> deviceId = ret
+	<span class="global">print</span>( <span class="string">"current deviceId = "</span> .. deviceId )
+<span class="keyword">end</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getSDKVersion"></a>
+    <strong>getSDKVersion ()</strong>
+    </dt>
+    <dd>
+    Get SDK Version
+
+
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">getSDKVersion</span>( <span class="keyword">function</span> (ret)
+	<span class="keyword">local</span> version = ret
+	<span class="global">print</span>( <span class="string">"current version = "</span> .. version )
+<span class="keyword">end</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "setSuperProperties"></a>
+    <strong>setSuperProperties (properties, appId)</strong>
+    </dt>
+    <dd>
+    Set the public event attribute, which will be included in every event uploaded after that.  The public event properties are saved without setting them each time.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">properties</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Super Properties
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">setSuperProperties</span>( {
+	channel = <span class="string">"Apple Store "</span>,
+	vip_level = <span class="number">100</span>
+} )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "unsetSuperProperties"></a>
+    <strong>unsetSuperProperties (property, appId)</strong>
+    </dt>
+    <dd>
+    Clears a public event attribute
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">property</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.6">table</a></span>
+         Public event attribute key to clear
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">unsetSuperProperties</span>( <span class="string">"vip_level"</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getSuperProperties"></a>
+    <strong>getSuperProperties (appId)</strong>
+    </dt>
+    <dd>
+    Gets the public event properties that have been set.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">getSuperProperties</span>( <span class="keyword">function</span> (ret)
+	<span class="keyword">local</span> superProperties = ret
+	<span class="global">print</span>( <span class="string">"current superProperties = "</span> .. superProperties )
+<span class="keyword">end</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "clearSuperProperties"></a>
+    <strong>clearSuperProperties (appId)</strong>
+    </dt>
+    <dd>
+    Clear all public event attributes.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">clearSuperProperties</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getPresetProperties"></a>
+    <strong>getPresetProperties (appId)</strong>
+    </dt>
+    <dd>
+    Gets preset properties for all events.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">getPresetProperties</span>( <span class="keyword">function</span> (ret)
+	<span class="keyword">local</span> presetProperties = ret
+	<span class="global">print</span>( <span class="string">"current presetProperties = "</span> .. presetProperties )
+<span class="keyword">end</span> )</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "calibrateTime"></a>
+    <strong>calibrateTime (timestamp, appId)</strong>
+    </dt>
+    <dd>
+    Calibrate Event Time with Timestamp
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">timestamp</span>
+            <span class="types"><span class="type">number</span></span>
+         unix timestamp
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">calibrateTime</span>(<span class="number">1672502400000</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "calibrateTimeWithNtp"></a>
+    <strong>calibrateTimeWithNtp (ntpServer, appId)</strong>
+    </dt>
+    <dd>
+    Calibrate Event Time with NTP Server
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">ntpServer</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         ntp server url
+        </li>
+        <li><span class="parameter">appId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
+         Project ID
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">TDAnalytics.<span class="function-name">calibrateTimeWithNtp</span>(<span class="string">"time.apple.com"</span>)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2023-09-05 15:59:24 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
