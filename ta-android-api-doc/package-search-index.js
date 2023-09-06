@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"cn.thinkingdata.analytics"}]
+packageSearchIndex = [{"l":"cn.thinkingdata.analytics","h":"","u":""},{"l":"cn.thinkingdata.analytics.model","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

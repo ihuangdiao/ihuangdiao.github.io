@@ -1,0 +1,337 @@
+\doxysection{Thinking\+Data.\+Analytics.\+TDAnalytics Class Reference}
+\hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics}{}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics}\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+
+
+The packaging class of Thinking\+Analytics\+SDK provides static methods, which is more convenient for customers to use.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a1f44da8cf6d265d5832241640b7b6741}{Calibrate\+Time}} (long time\+Stamp)
+\begin{DoxyCompactList}\small\item\em time calibration with timestamp \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a8b2cc372157bbc24f7bf5f122cb1f5d4}{Init}} (string app\+Id, string server\+Url)
+\begin{DoxyCompactList}\small\item\em Initialize the SDK. The track function is not available until this interface is invoked. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aec0dafef525814da47a3204f9a79dbf7}{Track}} (string event\+Name, Dictionary$<$ string, object $>$ properties=null)
+\begin{DoxyCompactList}\small\item\em Upload a single event, containing only preset properties and set public properties. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae81d01188eff5d5c12f32e232e1b3e48}{Track}} (\mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_event_model}{TDEvent\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Upload a special type of event. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a754a65d673c5400b12cdfcc65fa263e2}{User\+Set}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em Sets the user property, replacing the original value with the new value if the property already exists. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a31e87f428e7bf7f65b693df88e24be15}{User\+Set\+Once}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em Sets a single user attribute, ignoring the new attribute value if the attribute already exists. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a45ad02a242bee3f8b47808a778616a05}{User\+Unset}} (string property)
+\begin{DoxyCompactList}\small\item\em Reset user properties. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ad7d35fc24e23246f5b0820f920529c71}{User\+Unset}} (List$<$ string $>$ properties)
+\begin{DoxyCompactList}\small\item\em Reset user properties. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a4136121d2b71e262339832b6265fcfee}{User\+Add}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em Only one attribute is set when the user attributes of a numeric type are added. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a403d4163dd528c3687ab639434e0e16b}{User\+Append}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em Append a user attribute of the List type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ac1515b01edd2a7c9f159bc52f197276a}{User\+Uniq\+Append}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em The element appended to the library needs to be done to remove the processing, remove the support, and then import. \end{DoxyCompactList}\item 
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aaaeb0a91da9914e02c623326ac543eba}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aaaeb0a91da9914e02c623326ac543eba} 
+static void {\bfseries User\+Delete} ()
+\begin{DoxyCompactList}\small\item\em Delete the user attributes, but retain the uploaded event data. This operation is not reversible and should be performed with caution. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a86794762106b396d7c4b30a6482759cb}{Set\+Super\+Properties}} (Dictionary$<$ string, object $>$ properties)
+\begin{DoxyCompactList}\small\item\em Set the public event attribute, which will be included in every event uploaded after that. The public event properties are saved without setting them each time. \end{DoxyCompactList}\item 
+static Dictionary$<$ string, object $>$ \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_acc944d9bf5660531905bd47722fe2ec3}{Get\+Super\+Properties}} ()
+\begin{DoxyCompactList}\small\item\em Gets the public event properties that have been set. \end{DoxyCompactList}\item 
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a70fab54bdbddb25451b34f2f794d09d0}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a70fab54bdbddb25451b34f2f794d09d0} 
+static void {\bfseries Clear\+Super\+Properties} ()
+\begin{DoxyCompactList}\small\item\em Clear all public event attributes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a02c0f13a196cfe53f5054b4c79b8774f}{Login}} (string account)
+\begin{DoxyCompactList}\small\item\em Set the account ID. Each setting overrides the previous value. Login events will not be uploaded. \end{DoxyCompactList}\item 
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a0fb5feb4e1e5e23cbef71885cef20763}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a0fb5feb4e1e5e23cbef71885cef20763} 
+static void {\bfseries Logout} ()
+\begin{DoxyCompactList}\small\item\em Clearing the account ID will not upload user logout events. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae707fa80b46b348dba5b10a85438e7e5}{Set\+Distinct\+Id}} (string distinct\+Id)
+\begin{DoxyCompactList}\small\item\em Set the distinct ID to replace the default UUID distinct ID. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aaf46c0247a840d3803c844d1f17e40f2}{Get\+Device\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Obtain the device ID. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a3d721a76901fae533872f173155ecd69}{Get\+Distinct\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get a visitor ID\+: The \#distinct\+\_\+id value in the reported data. \end{DoxyCompactList}\item 
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a6cd9bfc348c0e442f2c353ba495dcbae}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a6cd9bfc348c0e442f2c353ba495dcbae} 
+static void {\bfseries Flush} ()
+\begin{DoxyCompactList}\small\item\em Empty the cache queue. When this function is called, the data in the current cache queue will attempt to be reported. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ab0c1a6e759d566e958f843799aff4112}{Enable\+Log}} (bool enable)
+\begin{DoxyCompactList}\small\item\em enable debug logging \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The packaging class of Thinking\+Analytics\+SDK provides static methods, which is more convenient for customers to use. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a1f44da8cf6d265d5832241640b7b6741}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a1f44da8cf6d265d5832241640b7b6741} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!CalibrateTime@{CalibrateTime}}
+\index{CalibrateTime@{CalibrateTime}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{CalibrateTime()}{CalibrateTime()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Calibrate\+Time (\begin{DoxyParamCaption}\item[{long}]{time\+Stamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+time calibration with timestamp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Stamp} & timestamp\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ab0c1a6e759d566e958f843799aff4112}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ab0c1a6e759d566e958f843799aff4112} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!EnableLog@{EnableLog}}
+\index{EnableLog@{EnableLog}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{EnableLog()}{EnableLog()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Enable\+Log (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+enable debug logging 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & log switch\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aaf46c0247a840d3803c844d1f17e40f2}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aaf46c0247a840d3803c844d1f17e40f2} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!GetDeviceId@{GetDeviceId}}
+\index{GetDeviceId@{GetDeviceId}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{GetDeviceId()}{GetDeviceId()}}
+{\footnotesize\ttfamily static string Thinking\+Data.\+Analytics.\+TDAnalytics.\+Get\+Device\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Obtain the device ID. 
+
+\begin{DoxyReturn}{Returns}
+device ID
+\end{DoxyReturn}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a3d721a76901fae533872f173155ecd69}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a3d721a76901fae533872f173155ecd69} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!GetDistinctId@{GetDistinctId}}
+\index{GetDistinctId@{GetDistinctId}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{GetDistinctId()}{GetDistinctId()}}
+{\footnotesize\ttfamily static string Thinking\+Data.\+Analytics.\+TDAnalytics.\+Get\+Distinct\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get a visitor ID\+: The \#distinct\+\_\+id value in the reported data. 
+
+\begin{DoxyReturn}{Returns}
+distinct ID
+\end{DoxyReturn}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_acc944d9bf5660531905bd47722fe2ec3}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_acc944d9bf5660531905bd47722fe2ec3} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!GetSuperProperties@{GetSuperProperties}}
+\index{GetSuperProperties@{GetSuperProperties}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{GetSuperProperties()}{GetSuperProperties()}}
+{\footnotesize\ttfamily static Dictionary$<$ string, object $>$ Thinking\+Data.\+Analytics.\+TDAnalytics.\+Get\+Super\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the public event properties that have been set. 
+
+\begin{DoxyReturn}{Returns}
+public event properties that have been set
+\end{DoxyReturn}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a8b2cc372157bbc24f7bf5f122cb1f5d4}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a8b2cc372157bbc24f7bf5f122cb1f5d4} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!Init@{Init}}
+\index{Init@{Init}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Init (\begin{DoxyParamCaption}\item[{string}]{app\+Id,  }\item[{string}]{server\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Initialize the SDK. The track function is not available until this interface is invoked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & app id\\
+\hline
+{\em server\+Url} & server url\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a02c0f13a196cfe53f5054b4c79b8774f}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a02c0f13a196cfe53f5054b4c79b8774f} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!Login@{Login}}
+\index{Login@{Login}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Login (\begin{DoxyParamCaption}\item[{string}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set the account ID. Each setting overrides the previous value. Login events will not be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae707fa80b46b348dba5b10a85438e7e5}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae707fa80b46b348dba5b10a85438e7e5} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!SetDistinctId@{SetDistinctId}}
+\index{SetDistinctId@{SetDistinctId}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{SetDistinctId()}{SetDistinctId()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Set\+Distinct\+Id (\begin{DoxyParamCaption}\item[{string}]{distinct\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set the distinct ID to replace the default UUID distinct ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distinct\+Id} & distinct id\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a86794762106b396d7c4b30a6482759cb}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a86794762106b396d7c4b30a6482759cb} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!SetSuperProperties@{SetSuperProperties}}
+\index{SetSuperProperties@{SetSuperProperties}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{SetSuperProperties()}{SetSuperProperties()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Set\+Super\+Properties (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set the public event attribute, which will be included in every event uploaded after that. The public event properties are saved without setting them each time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & super properties\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aec0dafef525814da47a3204f9a79dbf7}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_aec0dafef525814da47a3204f9a79dbf7} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!Track@{Track}}
+\index{Track@{Track}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{Track()}{Track()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Track (\begin{DoxyParamCaption}\item[{string}]{event\+Name,  }\item[{Dictionary$<$ string, object $>$}]{properties = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Upload a single event, containing only preset properties and set public properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Name} & event name\\
+\hline
+{\em properties} & event properties\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae81d01188eff5d5c12f32e232e1b3e48}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ae81d01188eff5d5c12f32e232e1b3e48} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!Track@{Track}}
+\index{Track@{Track}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{Track()}{Track()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_thinking_data_1_1_analytics_1_1_t_d_event_model}{TDEvent\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Upload a special type of event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Event Object TDFirst\+Event\+Model / TDOver\+Writable\+Event\+Model / TDUpdatable\+Event\+Model\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a4136121d2b71e262339832b6265fcfee}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a4136121d2b71e262339832b6265fcfee} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserAdd@{UserAdd}}
+\index{UserAdd@{UserAdd}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserAdd()}{UserAdd()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Add (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Only one attribute is set when the user attributes of a numeric type are added. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a403d4163dd528c3687ab639434e0e16b}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a403d4163dd528c3687ab639434e0e16b} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserAppend@{UserAppend}}
+\index{UserAppend@{UserAppend}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserAppend()}{UserAppend()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Append (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Append a user attribute of the List type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a754a65d673c5400b12cdfcc65fa263e2}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a754a65d673c5400b12cdfcc65fa263e2} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserSet@{UserSet}}
+\index{UserSet@{UserSet}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserSet()}{UserSet()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Set (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets the user property, replacing the original value with the new value if the property already exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a31e87f428e7bf7f65b693df88e24be15}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a31e87f428e7bf7f65b693df88e24be15} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserSetOnce@{UserSetOnce}}
+\index{UserSetOnce@{UserSetOnce}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserSetOnce()}{UserSetOnce()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Set\+Once (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets a single user attribute, ignoring the new attribute value if the attribute already exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ac1515b01edd2a7c9f159bc52f197276a}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ac1515b01edd2a7c9f159bc52f197276a} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserUniqAppend@{UserUniqAppend}}
+\index{UserUniqAppend@{UserUniqAppend}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserUniqAppend()}{UserUniqAppend()}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Uniq\+Append (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, object $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The element appended to the library needs to be done to remove the processing, remove the support, and then import. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ad7d35fc24e23246f5b0820f920529c71}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_ad7d35fc24e23246f5b0820f920529c71} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserUnset@{UserUnset}}
+\index{UserUnset@{UserUnset}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserUnset()}{UserUnset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Unset (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Reset user properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & list of user property\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a45ad02a242bee3f8b47808a778616a05}\label{class_thinking_data_1_1_analytics_1_1_t_d_analytics_a45ad02a242bee3f8b47808a778616a05} 
+\index{ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}!UserUnset@{UserUnset}}
+\index{UserUnset@{UserUnset}!ThinkingData.Analytics.TDAnalytics@{ThinkingData.Analytics.TDAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserUnset()}{UserUnset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Thinking\+Data.\+Analytics.\+TDAnalytics.\+User\+Unset (\begin{DoxyParamCaption}\item[{string}]{property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Reset user properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property} & user property\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Thinking\+Data.\+cs\end{DoxyCompactItemize}
