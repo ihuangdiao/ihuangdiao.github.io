@@ -1,8 +1,8 @@
 # TDAnalytics
 
-ThinkingData Analytics SDKs
+[ThinkingData](https://www.thinkingdata.cn) Analytics SDKs
 
-![output](http://image.thinkingdata.cn/images/common/logo-en.png)
+![output](https://image.thinkingdata.cn/images/common/logo-en.png)
 
 [ta-unity-api-doc](./ta-unity-api-doc/index.html)
 
