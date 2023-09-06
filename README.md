@@ -1,27 +1,27 @@
-# TDAnalytics
-
-[ThinkingData](https://www.thinkingdata.cn) Analytics SDKs
-
 ![output](https://image.thinkingdata.cn/images/common/logo-en.png)
 
-[ta-unity-api-doc](./ta-unity-api-doc/index.html)
+# TDAnalytics
 
-[ta-rn-api-doc](./ta-rn-api-doc/index.html)
+[ThinkingData](https://www.thinkingdata.cn) Analytics SDK API Documents.
 
-[ta-mp-api-doc](./ta-mp-api-doc/index.html)
+## Client SDK API Documents
+- [Unity SDK](./ta-unity-api-doc/index.html)
+- [React Native SDK](./ta-rn-api-doc/index.html)
+- [Mini Program SDK](./ta-mp-api-doc/index.html)
+- [JavaScript SDK](./ta-js-api-doc/index.html)
+- [Flutter SDK](./ta-flutter-api-doc/index.html)
+- [C# SDK](./ta-csharp-api-doc/index.html)
+- [C++ SDK](./ta-cpp-api-doc/index.html)
+- [Android SDK](./ta-android-api-doc/index.html)
+- [Cocos2d-x SDK](./ta-cocos2dx-api-doc/index.html)
+- [Corona SDK](./ta-corona-api-doc/index.html)
+- [Cocos2d-Lua SDK](./ta-cocos2d-lua-api-doc/index.html)
 
-[ta-js-api-doc](./ta-js-api-doc/index.html)
-
-[ta-flutter-api-doc](./ta-flutter-api-doc/index.html)
-
-[ta-csharp-api-doc](./ta-csharp-api-doc/index.html)
-
-[ta-cpp-api-doc](./ta-cpp-api-doc/index.html)
-
-[ta-android-api-doc](./ta-android-api-doc/index.html)
-
-[ta-cocos2dx-api-doc](./ta-cocos2dx-api-doc/index.html)
-
-[ta-corona-api-doc](./ta-corona-api-doc/index.html)
-
-[ta-cocos2d-lua-api-doc](./ta-cocos2d-lua-api-doc/index.html)
+## Server SDK API Documents
+- [Java SDK](./ta-server-api-doc/index.html)
+- [Golang SDK](./ta-server-api-doc/index.html)
+- [Node SDK](./ta-server-api-doc/index.html)
+- [PHP SDK](./ta-server-api-doc/index.html)
+- [C# SDK](./ta-server-api-doc/index.html)
+- [Lua SDK](./ta-server-api-doc/index.html)
+- [Python SDK](./ta-server-api-doc/index.html)
