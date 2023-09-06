@@ -1,4 +1,4 @@
-![output](https://image.thinkingdata.cn/images/common/logo-en.png)
+![logo](logo-en.png)
 
 # TDAnalytics
 
@@ -7,7 +7,7 @@
 ## Client SDK API Documents
 - [Unity SDK](./ta-unity-api-doc/index.html)
 - [React Native SDK](./ta-rn-api-doc/index.html)
-- [Mini Program SDK](./ta-mp-api-doc/index.html)
+- [Mini-Program & Mini-Game SDK](./ta-mp-api-doc/index.html)
 - [JavaScript SDK](./ta-js-api-doc/index.html)
 - [Flutter SDK](./ta-flutter-api-doc/index.html)
 - [C# SDK](./ta-csharp-api-doc/index.html)
